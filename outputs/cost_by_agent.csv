@@ -1,0 +1,4 @@
+agent,api_calls,cost_usd,input_tokens,output_tokens,cache_write_tokens,cache_read_tokens
+analyst,20,1.11366,70,25697,117765,53064
+researcher,16,0.8476520000000001,42,18398,92021,97094
+verifier,45,1.939877,124,46053,191102,314054

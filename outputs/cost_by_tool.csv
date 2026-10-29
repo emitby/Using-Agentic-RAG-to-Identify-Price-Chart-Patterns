@@ -1,0 +1,6 @@
+tool,calls,est_result_tokens,est_result_cost_usd,call_cost_usd
+final_answer,0.0,0.0,0.0,2.061958
+search_corpus,51.0,63775.0,0.2551,0.656201
+get_candidate,51.0,8042.0,0.032168,0.5708675
+get_price_window,33.0,1317.0,0.005268,0.37784296666666667
+get_chunk,24.0,8420.0,0.03368,0.23431953333333333

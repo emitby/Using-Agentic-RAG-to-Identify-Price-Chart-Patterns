@@ -1,0 +1,13 @@
+# Local environment and caches (rebuilt by setup / run.sh)
+.venv/
+.cache/
+__pycache__/
+*.pyc
+
+# Full text scraped from ChartSchool and ThePatternSite is copyrighted; it is not
+# republished here. Rebuild it locally with: ./run.sh scripts/build_corpus.py
+data/corpus/pages.jsonl
+data/corpus/chunks.jsonl
+
+# Claude Code per-user settings
+.claude/settings.local.json

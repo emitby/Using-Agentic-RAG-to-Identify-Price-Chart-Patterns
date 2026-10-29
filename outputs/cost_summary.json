@@ -1,0 +1,31 @@
+{
+  "total_cost_usd": 3.9012,
+  "api_calls": 81,
+  "tool_calls": 159,
+  "runs": 5,
+  "avg_pipeline_run_usd": 0.6792,
+  "cache_read_share_of_input": 0.536,
+  "by_agent_usd": {
+    "analyst": 1.1137,
+    "researcher": 0.8477,
+    "verifier": 1.9399
+  },
+  "by_tool_usd": {
+    "final_answer": 2.062,
+    "search_corpus": 0.6562,
+    "get_candidate": 0.5709,
+    "get_price_window": 0.3778,
+    "get_chunk": 0.2343
+  },
+  "by_tool_est_result_usd": {
+    "final_answer": 0.0,
+    "search_corpus": 0.2551,
+    "get_candidate": 0.0322,
+    "get_price_window": 0.0053,
+    "get_chunk": 0.0337
+  },
+  "by_model_usd": {
+    "claude-opus-5-5": 3.9012
+  },
+  "chart": "C:\\Users\\emitb\\anthropic-projects\\Agentic-RAG-Prototype\\outputs\\cost_breakdown.png"
+}

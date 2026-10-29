@@ -1,0 +1,567 @@
+{
+  "time": "2026-10-29T11:31:02",
+  "retrieval": {
+    "recall_at_5": 1.0,
+    "mrr": 0.928,
+    "cases": [
+      {
+        "query": "double top reversal",
+        "expected": "double-top-reversal or AdamEvePatterns",
+        "rank": 1,
+        "top1": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/double-top-reversal"
+      },
+      {
+        "query": "double bottom reversal",
+        "expected": "double-bottom-reversal or DoubleBottomTypes",
+        "rank": 1,
+        "top1": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/double-bottom-reversal"
+      },
+      {
+        "query": "head and shoulders top neckline",
+        "expected": "head-and-shoulders-top or /hst.html",
+        "rank": 1,
+        "top1": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/head-and-shoulders-top"
+      },
+      {
+        "query": "head and shoulders bottom inverse",
+        "expected": "head-and-shoulders-bottom or /hsb.html",
+        "rank": 1,
+        "top1": "https://thepatternsite.com/hsb.html"
+      },
+      {
+        "query": "ascending triangle",
+        "expected": "ascending-triangle or /at.html",
+        "rank": 1,
+        "top1": "https://thepatternsite.com/at.html"
+      },
+      {
+        "query": "descending triangle",
+        "expected": "descending-triangle or /dt.html",
+        "rank": 5,
+        "top1": "https://thepatternsite.com/BustDescTriangles.html"
+      },
+      {
+        "query": "symmetrical triangle",
+        "expected": "symmetrical-triangle or /st.html",
+        "rank": 1,
+        "top1": "https://thepatternsite.com/st.html"
+      },
+      {
+        "query": "rising wedge",
+        "expected": "rising-wedge or wedgeri",
+        "rank": 1,
+        "top1": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/rising-wedge"
+      },
+      {
+        "query": "falling wedge",
+        "expected": "falling-wedge or wedgefa",
+        "rank": 1,
+        "top1": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/falling-wedge"
+      },
+      {
+        "query": "price channel",
+        "expected": "price-channel or channels",
+        "rank": 1,
+        "top1": "https://chartschool.stockcharts.com/table-of-contents/technical-indicators-and-overlays/technical-overlays/price-channels"
+      },
+      {
+        "query": "rectangle pattern",
+        "expected": "rectangle",
+        "rank": 1,
+        "top1": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/rectangle"
+      },
+      {
+        "query": "triple top reversal",
+        "expected": "triple-top-reversal or /tripletop",
+        "rank": 1,
+        "top1": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/triple-top-reversal"
+      },
+      {
+        "query": "support and resistance",
+        "expected": "support-and-resistance or /SAR.html",
+        "rank": 1,
+        "top1": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+      },
+      {
+        "query": "trend lines validate",
+        "expected": "trend-lines or trendup or trenddown",
+        "rank": 2,
+        "top1": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/bump-and-run-reversal"
+      },
+      {
+        "query": "golden cross moving average crossover",
+        "expected": "moving-average",
+        "rank": 1,
+        "top1": "https://chartschool.stockcharts.com/table-of-contents/technical-indicators-and-overlays/technical-overlays/moving-averages-simple-and-exponential"
+      },
+      {
+        "query": "broadening top megaphone",
+        "expected": "broadening",
+        "rank": 1,
+        "top1": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/broadening-top-or-megaphone-top"
+      },
+      {
+        "query": "Bulkowski double tops Adam Eve",
+        "expected": "thepatternsite.com/",
+        "rank": 1,
+        "top1": "https://thepatternsite.com/aedt.html"
+      },
+      {
+        "query": "busted double top",
+        "expected": "BustDoubleTops",
+        "rank": 1,
+        "top1": "https://thepatternsite.com/BustDoubleTops.html"
+      }
+    ]
+  },
+  "detection_check": [
+    {
+      "case": "confirmed_double_top",
+      "planted_found": true,
+      "detected": [
+        "ascending_triangle",
+        "death_cross",
+        "double_top",
+        "resistance",
+        "rising_support_trendline",
+        "support"
+      ],
+      "trend": "mixed"
+    },
+    {
+      "case": "confirmed_inverse_head_and_shoulders",
+      "planted_found": true,
+      "detected": [
+        "double_top",
+        "falling_resistance_trendline",
+        "golden_cross",
+        "inverse_head_and_shoulders",
+        "resistance",
+        "rising_support_trendline",
+        "support"
+      ],
+      "trend": "uptrend"
+    },
+    {
+      "case": "steady_uptrend",
+      "planted_found": true,
+      "detected": [
+        "broadening_formation",
+        "golden_cross",
+        "resistance",
+        "rising_support_trendline",
+        "support"
+      ],
+      "trend": "uptrend"
+    },
+    {
+      "case": "ascending_triangle",
+      "planted_found": true,
+      "detected": [
+        "ascending_triangle",
+        "double_top",
+        "golden_cross",
+        "resistance",
+        "rising_support_trendline",
+        "support",
+        "triple_top"
+      ],
+      "trend": "mixed"
+    }
+  ],
+  "spy": {
+    "available": true,
+    "run_id": "20261029-112840",
+    "windows": {
+      "10y": {
+        "trend_regime": "uptrend",
+        "verdict": "bullish",
+        "verdict_matches_trend": true,
+        "approved_or_revised_rate": 1.0,
+        "annotations_with_citations": "6/6",
+        "verifier_agrees": true
+      },
+      "3y": {
+        "trend_regime": "uptrend",
+        "verdict": "bullish",
+        "verdict_matches_trend": true,
+        "approved_or_revised_rate": 1.0,
+        "annotations_with_citations": "6/6",
+        "verifier_agrees": true
+      }
+    }
+  },
+  "golden": [
+    {
+      "case": "confirmed_double_top",
+      "grounding_pass": true,
+      "planted_drawn": true,
+      "verdict": "bearish",
+      "verdict_ok": true,
+      "annotations": 6,
+      "citation_rate": 1.0,
+      "drawn_types": [
+        "death_cross",
+        "double_top",
+        "resistance",
+        "rising_support_trendline",
+        "support"
+      ],
+      "cited_ids": [
+        "sto-007-00",
+        "sto-007-04",
+        "sto-007-05",
+        "sto-007-06",
+        "sto-007-13",
+        "sto-007-14",
+        "sto-027-01",
+        "sto-027-05",
+        "sto-031-02",
+        "sto-031-03",
+        "sto-094-12",
+        "sto-094-14",
+        "the-068-02"
+      ],
+      "decisions": [
+        "approve",
+        "approve",
+        "approve",
+        "approve",
+        "approve",
+        "approve"
+      ],
+      "analyst_rejected": [
+        {
+          "id": "C06",
+          "reason": "This is not a valid ascending triangle. It has only two highs and two lows, below Bulkowski's minimum of three touches on one line. The 'flat top' is the double top itself, and price has already fallen out the bottom, so it adds nothing beyond C05."
+        }
+      ],
+      "verifier_issues": [
+        {
+          "id": "C05",
+          "decision": "approve",
+          "issues": "None. The detector data matches: peaks $140.04 (2022-06-20) and $140.75 (2022-10-07) differ by 0.51%, the trough is $124.60, depth is 11.47%, and the pattern confirmed on 2022-12-01. Closes went from $126.82 on 2022-11-25 to $123.33 on 2022-12-05, so the valley did break. The pattern meets the <3% peak difference and \u226510% depth rules."
+        },
+        {
+          "id": "C02",
+          "decision": "approve",
+          "issues": "The level and the 8.34% distance are correct. The detector shows role_reversal false, meaning price has not come back to test this level as resistance. The description says 'often acts', so it does not overstate this."
+        },
+        {
+          "id": "C04",
+          "decision": "approve",
+          "issues": "Correct. There are 2 touches ($100.00 and $124.60), and the line broke on 2022-11-04. The description correctly says the line was never confirmed by a third touch."
+        },
+        {
+          "id": "C07",
+          "decision": "approve",
+          "issues": "Correct date (2022-12-16). The description rightly calls it a lagging signal."
+        },
+        {
+          "id": "C03",
+          "decision": "approve",
+          "issues": "Correct. There are two high touches, at $140.04 and $140.75, and the level is $140.39. It is 22.07% above the close."
+        },
+        {
+          "id": "C01",
+          "decision": "approve",
+          "issues": "Correct. There is one touch at $100.00, 13.05% below the close, and the description notes it is a weak level."
+        }
+      ]
+    },
+    {
+      "case": "confirmed_inverse_head_and_shoulders",
+      "grounding_pass": true,
+      "planted_drawn": true,
+      "verdict": "bullish",
+      "verdict_ok": true,
+      "annotations": 6,
+      "citation_rate": 1.0,
+      "drawn_types": [
+        "falling_resistance_trendline",
+        "golden_cross",
+        "inverse_head_and_shoulders",
+        "resistance",
+        "rising_support_trendline",
+        "support"
+      ],
+      "cited_ids": [
+        "sto-007-00",
+        "sto-007-04",
+        "sto-007-05",
+        "sto-007-06",
+        "sto-009-02",
+        "sto-009-03",
+        "sto-009-04",
+        "sto-027-01",
+        "sto-027-02",
+        "sto-027-05",
+        "sto-027-11",
+        "sto-094-12",
+        "sto-094-14",
+        "the-024-01",
+        "the-024-03"
+      ],
+      "decisions": [
+        "revise",
+        "revise",
+        "approve",
+        "approve",
+        "revise",
+        "approve"
+      ],
+      "analyst_rejected": [
+        {
+          "id": "C07",
+          "reason": "The double top never closed below its $104.73 valley, and price then rallied above both peaks, so it failed. Its peaks are the same pivots as the inverse head and shoulders neckline, so it adds nothing beyond C08 and C01."
+        },
+        {
+          "id": "C02",
+          "reason": "Single-touch support at the right shoulder low ($118.55), 18% below the close. It is too far away to matter now and is already part of C08 and C05."
+        },
+        {
+          "id": "C03",
+          "reason": "Single-touch support at the window low ($104.73), 28% below the close. It is the head of C08 and too far away to matter now."
+        }
+      ],
+      "verifier_issues": [
+        {
+          "id": "C08",
+          "decision": "revise",
+          "issues": "Prices, dates and status are correct. The breakout was marginal: price closed at $129.99 on 2022-11-14, which is only just above the falling neckline. Volume data is missing, so StockCharts' requirement of a convincing break on rising volume cannot be checked. I added that caveat."
+        },
+        {
+          "id": "C01",
+          "decision": "revise",
+          "issues": "The level is valid and sits 9.4% below the close. The breakout close ($129.99) and the next day's low close ($129.88) were both under $131.38, so price only cleared this flat level after 2022-11-15. It has not pulled back to test it since, so its role as support is still unconfirmed."
+        },
+        {
+          "id": "C04",
+          "decision": "approve",
+          "issues": "Correct: the single-touch window high of $150.00 is 3.44% above the $145.02 close. Because it has only one touch, it is a weak level."
+        },
+        {
+          "id": "C05",
+          "decision": "approve",
+          "issues": "Anchors, line value ($130.4) and status match the data. The analyst correctly notes that a two-touch line is not yet confirmed."
+        },
+        {
+          "id": "C06",
+          "decision": "revise",
+          "issues": "Data are correct. However, sto-027-02 says a trend line needs three points to be valid, and this one has only two. sto-027-11 also warns that a trendline break alone should not decide a trend change. I added that caveat."
+        },
+        {
+          "id": "C09",
+          "decision": "approve",
+          "issues": "Date, price and the SMA facts match the trend data: price is above both SMAs and the 200-bar SMA is rising."
+        }
+      ]
+    },
+    {
+      "case": "steady_uptrend",
+      "grounding_pass": true,
+      "planted_drawn": true,
+      "verdict": "bullish",
+      "verdict_ok": true,
+      "annotations": 5,
+      "citation_rate": 1.0,
+      "drawn_types": [
+        "golden_cross",
+        "resistance",
+        "rising_support_trendline",
+        "support"
+      ],
+      "cited_ids": [
+        "sto-007-00",
+        "sto-007-04",
+        "sto-007-05",
+        "sto-007-06",
+        "sto-007-13",
+        "sto-027-01",
+        "sto-027-05",
+        "sto-094-12",
+        "sto-094-14"
+      ],
+      "decisions": [
+        "revise",
+        "approve",
+        "approve",
+        "approve",
+        "revise"
+      ],
+      "analyst_rejected": [
+        {
+          "id": "C06",
+          "reason": "Not a real broadening formation. Both lines rise, and the pivots make higher highs and higher lows rather than the higher highs and lower lows a megaphone needs. This is just a steady uptrend."
+        },
+        {
+          "id": "C03",
+          "reason": "The $100.00 range-extreme low is 42.87% below price, too far away to matter now. Showing it would only clutter the chart."
+        }
+      ],
+      "verifier_issues": [
+        {
+          "id": "C04",
+          "decision": "revise",
+          "issues": "The level is the provisional, unconfirmed 'H?' pivot at the latest close (2023-01-30), not an earlier rally high. The line saying 'resistance usually sits at earlier rally highs' does not fit this level. It is untested resistance with only one touch."
+        },
+        {
+          "id": "C01",
+          "decision": "approve",
+          "issues": "Checked: the level is $149.80 from 2022-09-12, 14.42% below the close, with one touch. Price has not closed back down to it since (the low after 2022-09-12 came before the move above). The role-reversal caveat is stated correctly."
+        },
+        {
+          "id": "C02",
+          "decision": "approve",
+          "issues": "Checked: $141.47 on 2022-10-10 is the most recent swing low and the lowest close since 2022-09-12. The description is accurate."
+        },
+        {
+          "id": "C05",
+          "decision": "approve",
+          "issues": "Checked: the anchors are $117.63 (2022-05-20) and $141.47 (2022-10-10), the line is at $160.35 at the last bar, and its status is intact. The caveat that two touches fall short of StockCharts' three-point rule is correct."
+        },
+        {
+          "id": "C07",
+          "decision": "revise",
+          "issues": "The date and price are correct. 'Kept rising since' overstates it: price briefly dipped below the cross price a few days later, then climbed to new highs."
+        }
+      ]
+    },
+    {
+      "case": "ascending_triangle",
+      "grounding_pass": true,
+      "planted_drawn": true,
+      "verdict": "bullish",
+      "verdict_ok": true,
+      "annotations": 6,
+      "citation_rate": 1.0,
+      "drawn_types": [
+        "ascending_triangle",
+        "double_top",
+        "golden_cross",
+        "resistance",
+        "rising_support_trendline",
+        "support"
+      ],
+      "cited_ids": [
+        "sto-007-00",
+        "sto-007-04",
+        "sto-007-13",
+        "sto-027-01",
+        "sto-027-05",
+        "sto-031-02",
+        "sto-031-03",
+        "sto-039-01",
+        "sto-039-02",
+        "sto-094-12",
+        "sto-094-14",
+        "the-053-01",
+        "the-068-02"
+      ],
+      "decisions": [
+        "approve",
+        "approve",
+        "approve",
+        "approve",
+        "approve",
+        "approve"
+      ],
+      "analyst_rejected": [
+        {
+          "id": "C02",
+          "reason": "The $90.00 range low is 23.74% below price and has only one touch, so it is not relevant now."
+        },
+        {
+          "id": "C06",
+          "reason": "The drop to the trough is only 6.91%, short of the 10% minimum for a double top. It is also redundant with the triangle's flat top."
+        },
+        {
+          "id": "C07",
+          "reason": "This triple top is pending and uses the same three highs as the triangle's resistance. Its confirmation level ($107.86) is the same as C05's, so it adds little."
+        }
+      ],
+      "verifier_issues": [
+        {
+          "id": "C08",
+          "decision": "approve",
+          "issues": "None. The data matches: three highs near $120 (flat upper line at $119.67), higher lows from $107.86 to $112.01 (lower line at $117.05 now), status forming, close inside. It meets Bulkowski's touch rule (3 tops, 2 lows). It has run about 7 months, longer than typical but within the allowed range."
+        },
+        {
+          "id": "C03",
+          "decision": "approve",
+          "issues": "The touches, the $120.02 level and the 1.69% distance match the data."
+        },
+        {
+          "id": "C04",
+          "decision": "approve",
+          "issues": "The anchors, the 3 touches and the line value of $117.05 match. One caveat: the third touch is the 2022-10-10 low ($115.07), which appears to sit slightly below the projected line. It is within the detector's tolerance and the status is intact, so the line is accepted."
+        },
+        {
+          "id": "C01",
+          "decision": "approve",
+          "issues": "This is the most recent swing low at $112.01. It is a single-touch level, which is correctly presented as secondary support."
+        },
+        {
+          "id": "C09",
+          "decision": "approve",
+          "issues": "The date and price match. The whipsaw caveat is consistent with the report: the slow SMA is not rising."
+        },
+        {
+          "id": "C05",
+          "decision": "approve",
+          "issues": "The peaks, the trough, the 0.22% peak difference and the 10.36% depth match, and an uptrend from $90.00 leads into the pattern. It is correctly framed as pending and unconfirmed until a close below $107.86."
+        }
+      ]
+    }
+  ],
+  "injection": {
+    "scanner_flags_classic": true,
+    "poison_flagged": false,
+    "verdict": "bearish",
+    "poison_cited": false,
+    "pass": true
+  },
+  "cost": {
+    "run_id": "eval-20261029-113102",
+    "total_cost_usd": 1.1792,
+    "budget_usd": 8.0,
+    "api_calls": 26,
+    "tool_calls": 52,
+    "input_tokens": 76,
+    "output_tokens": 27636,
+    "cache_write_tokens": 119212,
+    "cache_read_tokens": 150480,
+    "by_agent_usd": {
+      "researcher": 0.1763,
+      "analyst": 0.3428,
+      "verifier": 0.6601
+    },
+    "by_tool": {
+      "search_corpus": {
+        "calls": 11,
+        "call_cost_usd": 0.1826,
+        "est_result_cost_usd": 0.0561
+      },
+      "final_answer": {
+        "calls": 0,
+        "call_cost_usd": 0.6122,
+        "est_result_cost_usd": 0.0
+      },
+      "get_candidate": {
+        "calls": 17,
+        "call_cost_usd": 0.1613,
+        "est_result_cost_usd": 0.0106
+      },
+      "get_price_window": {
+        "calls": 11,
+        "call_cost_usd": 0.1035,
+        "est_result_cost_usd": 0.0018
+      },
+      "get_chunk": {
+        "calls": 13,
+        "call_cost_usd": 0.1195,
+        "est_result_cost_usd": 0.0186
+      }
+    }
+  }
+}

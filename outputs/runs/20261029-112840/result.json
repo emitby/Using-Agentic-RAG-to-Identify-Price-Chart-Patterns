@@ -1,0 +1,1853 @@
+{
+  "run_id": "20261029-112840",
+  "ticker": "SPY",
+  "model": "claude-opus-5-5",
+  "research": {
+    "definitions": [
+      {
+        "pattern": "double bottom reversal",
+        "definition": "StockCharts calls the Double Bottom Reversal a bullish reversal pattern. It has two troughs in a row at roughly the same level with a moderate peak between them. It forms after a downtrend lasting several months and usually marks an intermediate or long-term change in trend. Bulkowski (Adam & Eve variant) adds that the pattern is valid only once price closes above the peak between the two bottoms.",
+        "identification_rules": [
+          "Prior trend: a significant downtrend of several months should already be in place.",
+          "The first trough marks the lowest point of the current trend.",
+          "An advance of 10-20% follows the first trough and forms the reaction peak.",
+          "The second trough should form a low within 3% of the first low. At least about four weeks between the lows is preferable.",
+          "Volume and buying pressure should accelerate on the advance off the second trough. CMF, OBV and Accumulation/Distribution can help show this.",
+          "Price target: add the distance from the resistance breakout down to the trough lows to the breakout price."
+        ],
+        "confirmation": "The pattern is complete only when price breaks resistance at the highest point between the two troughs, ideally on higher volume or with a faster rise. Bulkowski says to wait for a close above the peak between the valleys; if you don't wait, there's a 48% chance price keeps falling without confirming. Broken resistance can then act as support, and that level may be retested (a throwback).",
+        "implication": "bullish",
+        "key_quote": "Breaking resistance from the highest point between the troughs completes the Double Bottom Reversal.",
+        "citations": [
+          "sto-032-00",
+          "sto-032-02",
+          "sto-032-03",
+          "the-051-03",
+          "the-051-07"
+        ]
+      },
+      {
+        "pattern": "double top reversal",
+        "definition": "StockCharts calls the Double Top Reversal a bearish reversal pattern. It has two peaks in a row at roughly the same level with a moderate trough between them. It forms after an uptrend lasting several months and marks at least an intermediate-term change from a bullish to a bearish trend. Bulkowski adds that the pattern is valid only when price closes below the lowest valley between the peaks.",
+        "identification_rules": [
+          "Prior trend: a significant uptrend of several months should already be in place.",
+          "The first peak marks the highest point of the current trend.",
+          "A decline of about 10-20% follows the first peak and forms the trough. Volume on this decline is usually inconsequential.",
+          "The second peak rises to the earlier high on low volume, usually within 3% of it. The peaks should be about a month apart; the norm is one to three months.",
+          "The decline from the second peak should show expanding volume or a faster drop, sometimes with gaps.",
+          "Price target: subtract the distance from the support break up to the peak from the support-break price."
+        ],
+        "confirmation": "The pattern is complete only when price breaks support at the lowest point between the peaks, with higher volume or a faster drop. A price filter (e.g. a 3% break) or a time filter (e.g. the break holding for three days) can screen out false breaks. Bulkowski says to wait for a close below the valley floor. Broken support can become resistance and may be retested with a rally.",
+        "implication": "bearish",
+        "key_quote": "Breaking support from the lowest point between the peaks completes the Double Top Reversal.",
+        "citations": [
+          "sto-031-00",
+          "sto-031-01",
+          "sto-031-02",
+          "sto-031-03",
+          "the-052-05",
+          "the-067-03"
+        ]
+      },
+      {
+        "pattern": "moving average crossovers (golden cross)",
+        "definition": "A double moving average crossover uses one shorter and one longer moving average. A bullish crossover, called a golden cross, happens when the shorter average crosses above the longer one; the opposite cross is a death cross. Using a 50-day and 200-day SMA makes it a medium- to long-term signal.",
+        "identification_rules": [
+          "Plot a relatively short moving average and a relatively long one, e.g. the 50-day and 200-day SMA or EMA.",
+          "Golden cross: the shorter average crosses above the longer average.",
+          "Death cross: the shorter average crosses below the longer average.",
+          "MACD turns positive during a golden cross. MACD(50,200,1) or the PPO can measure the crossover.",
+          "The longer the moving averages, the later the signals."
+        ],
+        "confirmation": "Crossovers often whipsaw when there is no strong trend. A price or time filter can help, such as requiring the cross to last three days or to exceed a set amount before acting. The signal works best when a strong trend takes hold.",
+        "implication": "bullish",
+        "key_quote": "A bullish crossover occurs when the shorter moving average crosses above the longer moving average. This is also known as a golden cross.",
+        "citations": [
+          "sto-094-12",
+          "sto-094-14"
+        ]
+      },
+      {
+        "pattern": "rising wedge",
+        "definition": "A rising wedge starts wide at the bottom and narrows as prices rise, slopes upward, and has a bearish bias. It can act as a reversal pattern (sloping up with the trend) or a continuation pattern (sloping up against a downtrend). StockCharts says rising wedges are bearish whichever type they are. Bulkowski describes a narrowing, rising triangle shape whose breakout is downward 60% of the time, and calls downward breakouts among the worst-performing patterns.",
+        "identification_rules": [
+          "The upper resistance line needs at least two higher reaction highs, ideally three.",
+          "The lower support line needs at least two higher reaction lows.",
+          "The two lines converge, and the support line is steeper than the resistance line, so rallies shrink and momentum fades.",
+          "Volume ideally declines as the wedge develops. Bulkowski says it trends downward 79% of the time until the breakout.",
+          "Bulkowski: at least five trendline touches (3 on one line, 2 on the other) and a minimum duration of 3 weeks, otherwise it's a pennant.",
+          "There is no measuring technique for a price target."
+        ],
+        "confirmation": "StockCharts: bearish confirmation comes only when the support line is broken convincingly, sometimes best after a break of the previous reaction low. More volume on the break adds confirmation, and a rally may retest the new resistance. Bulkowski: the pattern is valid when price closes outside one of the trendlines; the breakout can go either way but is downward 60% of the time.",
+        "implication": "bearish",
+        "key_quote": "Regardless of the type (reversal or continuation), rising wedges are bearish.",
+        "citations": [
+          "sto-034-00",
+          "sto-034-01",
+          "sto-034-02",
+          "the-084-01",
+          "the-084-00"
+        ]
+      },
+      {
+        "pattern": "support and resistance levels",
+        "definition": "Support levels can come from previous reaction lows, and resistance levels from previous reaction highs. When either level breaks, the balance of supply and demand has changed: a resistance breakout means buyers have the upper hand, and a support break means sellers have won. Support and resistance are close to mirror images of each other.",
+        "identification_rules": [
+          "Support is established with previous reaction lows.",
+          "Resistance is established with previous reaction highs.",
+          "A level gains validity with repeated tests in which price fails to break it.",
+          "Prices can briefly overshoot a level, so traders often use zones rather than exact prices.",
+          "Broken support can turn into resistance, and broken resistance can turn into support."
+        ],
+        "confirmation": "A level is confirmed when price tests it and fails to break through. A convincing break shows that supply or demand has shifted, and the broken level is often retested from the other side.",
+        "implication": "depends",
+        "key_quote": "A resistance breakout signals that the bulls (demand) have gained the upper hand, and a support break signals that the bears (supply) have won the battle.",
+        "citations": [
+          "sto-007-04",
+          "sto-007-05",
+          "sto-007-06",
+          "sto-007-13"
+        ]
+      },
+      {
+        "pattern": "trend lines (falling resistance / downtrend line)",
+        "definition": "A downtrend line has a negative slope and is drawn by connecting two or more highs, each lower than the one before. It acts as resistance and shows that net supply is increasing as price falls. The downtrend stays intact while prices remain below the line.",
+        "identification_rules": [
+          "Connect two or more highs; the second high must be lower than the first.",
+          "At least three points must be connected before the line counts as a valid trend line.",
+          "The line acts as resistance.",
+          "The downtrend is solid while prices stay below the line."
+        ],
+        "confirmation": "A break above the downtrend line means net supply is decreasing and a trend change could be close. StockCharts notes that a trend line break is not the same as a trend change.",
+        "implication": "bearish",
+        "key_quote": "As long as prices remain below the downtrend line, the downtrend is solid and intact.",
+        "citations": [
+          "sto-027-02"
+        ]
+      },
+      {
+        "pattern": "trend lines (rising support / uptrend line)",
+        "definition": "An uptrend line has a positive slope and is drawn by connecting two or more lows, each higher than the one before. It acts as support and shows that net demand is increasing as price rises. The uptrend stays intact while prices remain above the line.",
+        "identification_rules": [
+          "Connect two or more lows; the second low must be higher than the first.",
+          "At least three points must be connected before the line counts as a valid trend line.",
+          "The line acts as support.",
+          "The uptrend is solid while prices stay above the line."
+        ],
+        "confirmation": "A break below the uptrend line means net demand has weakened and a trend change could be close.",
+        "implication": "bullish",
+        "key_quote": "As long as prices remain above the trend line, the uptrend is considered solid and intact.",
+        "citations": [
+          "sto-027-01"
+        ]
+      }
+    ]
+  },
+  "windows": {
+    "10y": {
+      "title": "SPY, last 10 years, weekly bars",
+      "detection": {
+        "bar_size": "weekly",
+        "params": {
+          "zigzag_pct": 0.06,
+          "level_tol": 0.02,
+          "equal_tol": 0.03,
+          "head_min": 0.03,
+          "min_sep_bars": 4,
+          "flat_change": 0.04,
+          "sma": [
+            10,
+            40
+          ]
+        },
+        "first_date": "2016-11-04",
+        "last_date": "2026-10-29",
+        "bars": 522,
+        "last_close": 767.86,
+        "window_high": 778.57,
+        "window_low": 208.55,
+        "pivots": [
+          {
+            "label": "L",
+            "date": "2016-11-04",
+            "price": 208.55
+          },
+          {
+            "label": "H",
+            "date": "2018-01-26",
+            "price": 286.58
+          },
+          {
+            "label": "L",
+            "date": "2018-02-09",
+            "price": 261.5
+          },
+          {
+            "label": "H",
+            "date": "2018-03-09",
+            "price": 278.87
+          },
+          {
+            "label": "L",
+            "date": "2018-03-23",
+            "price": 258.05
+          },
+          {
+            "label": "H",
+            "date": "2018-09-21",
+            "price": 291.99
+          },
+          {
+            "label": "L",
+            "date": "2018-12-21",
+            "price": 240.7
+          },
+          {
+            "label": "H",
+            "date": "2019-05-03",
+            "price": 294.03
+          },
+          {
+            "label": "L",
+            "date": "2019-05-31",
+            "price": 275.27
+          },
+          {
+            "label": "H",
+            "date": "2020-02-14",
+            "price": 337.6
+          },
+          {
+            "label": "L",
+            "date": "2020-03-20",
+            "price": 228.8
+          },
+          {
+            "label": "H",
+            "date": "2020-06-05",
+            "price": 319.34
+          },
+          {
+            "label": "L",
+            "date": "2020-06-26",
+            "price": 300.05
+          },
+          {
+            "label": "H",
+            "date": "2020-08-28",
+            "price": 350.58
+          },
+          {
+            "label": "L",
+            "date": "2020-10-30",
+            "price": 326.54
+          },
+          {
+            "label": "H",
+            "date": "2021-12-31",
+            "price": 474.96
+          },
+          {
+            "label": "L",
+            "date": "2022-03-11",
+            "price": 420.07
+          },
+          {
+            "label": "H",
+            "date": "2022-04-01",
+            "price": 452.92
+          },
+          {
+            "label": "L",
+            "date": "2022-05-20",
+            "price": 389.63
+          },
+          {
+            "label": "H",
+            "date": "2022-05-27",
+            "price": 415.26
+          },
+          {
+            "label": "L",
+            "date": "2022-06-17",
+            "price": 365.86
+          },
+          {
+            "label": "H",
+            "date": "2022-08-12",
+            "price": 427.1
+          },
+          {
+            "label": "L",
+            "date": "2022-09-30",
+            "price": 357.18
+          },
+          {
+            "label": "H",
+            "date": "2022-12-02",
+            "price": 406.91
+          },
+          {
+            "label": "L",
+            "date": "2022-12-30",
+            "price": 382.43
+          },
+          {
+            "label": "H",
+            "date": "2023-02-03",
+            "price": 412.35
+          },
+          {
+            "label": "L",
+            "date": "2023-03-10",
+            "price": 385.91
+          },
+          {
+            "label": "H",
+            "date": "2023-07-28",
+            "price": 456.92
+          },
+          {
+            "label": "L",
+            "date": "2023-10-27",
+            "price": 410.68
+          },
+          {
+            "label": "H",
+            "date": "2025-02-14",
+            "price": 609.7
+          },
+          {
+            "label": "L",
+            "date": "2025-04-04",
+            "price": 505.28
+          },
+          {
+            "label": "H",
+            "date": "2026-01-09",
+            "price": 694.07
+          },
+          {
+            "label": "L",
+            "date": "2026-03-27",
+            "price": 634.09
+          },
+          {
+            "label": "H?",
+            "date": "2026-10-09",
+            "price": 778.57
+          }
+        ],
+        "trend": {
+          "regime": "uptrend",
+          "score": 4,
+          "checks": {
+            "close_above_fast_sma": true,
+            "close_above_slow_sma": true,
+            "fast_above_slow": true,
+            "slow_sma_rising": true
+          },
+          "fast_len": 10,
+          "slow_len": 40,
+          "fast_sma": 767.62,
+          "slow_sma": 729.79,
+          "last_close": 767.86,
+          "drawdown_from_window_high_pct": -1.38,
+          "last_cross": {
+            "type": "golden_cross",
+            "date": "2025-06-27",
+            "price": 614.91
+          }
+        },
+        "candidates": [
+          {
+            "type": "support",
+            "family": "level",
+            "implied_bias": "neutral",
+            "status": "active",
+            "start": "2026-01-09",
+            "end": "2026-01-09",
+            "points": [
+              {
+                "label": "touch 1 (high)",
+                "date": "2026-01-09",
+                "price": 694.07
+              }
+            ],
+            "metrics": {
+              "level": 694.07,
+              "touches": 1,
+              "touch_kinds": "H",
+              "distance_from_close_pct": -9.61,
+              "key_pivot": "most recent swing high",
+              "last_touch": "2026-01-09",
+              "role_reversal": false
+            },
+            "summary": "Support near $694.07: 1 pivot touch(es) from 2026-01-09 to 2026-01-09; most recent swing high.",
+            "id": "C01"
+          },
+          {
+            "type": "support",
+            "family": "level",
+            "implied_bias": "neutral",
+            "status": "active",
+            "start": "2026-03-27",
+            "end": "2026-03-27",
+            "points": [
+              {
+                "label": "touch 1 (low)",
+                "date": "2026-03-27",
+                "price": 634.09
+              }
+            ],
+            "metrics": {
+              "level": 634.09,
+              "touches": 1,
+              "touch_kinds": "L",
+              "distance_from_close_pct": -17.42,
+              "key_pivot": "most recent swing low",
+              "last_touch": "2026-03-27",
+              "role_reversal": false
+            },
+            "summary": "Support near $634.09: 1 pivot touch(es) from 2026-03-27 to 2026-03-27; most recent swing low.",
+            "id": "C02"
+          },
+          {
+            "type": "support",
+            "family": "level",
+            "implied_bias": "neutral",
+            "status": "active",
+            "start": "2022-04-01",
+            "end": "2023-07-28",
+            "points": [
+              {
+                "label": "touch 1 (high)",
+                "date": "2022-04-01",
+                "price": 452.92
+              },
+              {
+                "label": "touch 2 (high)",
+                "date": "2023-07-28",
+                "price": 456.92
+              }
+            ],
+            "metrics": {
+              "level": 454.92,
+              "touches": 2,
+              "touch_kinds": "HH",
+              "distance_from_close_pct": -40.75,
+              "key_pivot": "",
+              "last_touch": "2023-07-28",
+              "role_reversal": false
+            },
+            "summary": "Support near $454.92: 2 pivot touch(es) from 2022-04-01 to 2023-07-28.",
+            "id": "C03"
+          },
+          {
+            "type": "resistance",
+            "family": "level",
+            "implied_bias": "neutral",
+            "status": "active",
+            "start": "2026-10-09",
+            "end": "2026-10-09",
+            "points": [
+              {
+                "label": "touch 1 (high)",
+                "date": "2026-10-09",
+                "price": 778.57
+              }
+            ],
+            "metrics": {
+              "level": 778.57,
+              "touches": 1,
+              "touch_kinds": "H",
+              "distance_from_close_pct": 1.39,
+              "key_pivot": "range extreme",
+              "last_touch": "2026-10-09",
+              "role_reversal": false
+            },
+            "summary": "Resistance near $778.57: 1 pivot touch(es) from 2026-10-09 to 2026-10-09; range extreme.",
+            "id": "C04"
+          },
+          {
+            "type": "rising_support_trendline",
+            "family": "trendline",
+            "implied_bias": "bullish",
+            "status": "intact",
+            "start": "2022-09-30",
+            "end": "2026-10-29",
+            "points": [
+              {
+                "label": "anchor 1",
+                "date": "2022-09-30",
+                "price": 357.18
+              },
+              {
+                "label": "anchor 2",
+                "date": "2023-10-27",
+                "price": 410.68
+              }
+            ],
+            "metrics": {
+              "touches": 3,
+              "slope_pct_per_bar": 0.2675,
+              "span_bars": 213,
+              "broken_on": "",
+              "line_value_at_last_bar": 560.67
+            },
+            "summary": "Rising support trendline from 2022-09-30 ($357.18) through 2023-10-27 ($410.68), 3 touches, still intact.",
+            "id": "C05"
+          },
+          {
+            "type": "falling_resistance_trendline",
+            "family": "trendline",
+            "implied_bias": "bullish",
+            "status": "broken",
+            "start": "2022-04-01",
+            "end": "2023-04-14",
+            "points": [
+              {
+                "label": "anchor 1",
+                "date": "2022-04-01",
+                "price": 452.92
+              },
+              {
+                "label": "anchor 2",
+                "date": "2023-02-03",
+                "price": 412.35
+              }
+            ],
+            "metrics": {
+              "touches": 3,
+              "slope_pct_per_bar": -0.2036,
+              "span_bars": 54,
+              "broken_on": "2023-04-14",
+              "line_value_at_last_bar": 232.55
+            },
+            "summary": "Falling resistance trendline from 2022-04-01 ($452.92) through 2023-02-03 ($412.35), 3 touches, broken on 2023-04-14.",
+            "id": "C06"
+          },
+          {
+            "type": "double_top",
+            "family": "reversal",
+            "implied_bias": "bearish",
+            "status": "confirmed_then_failed",
+            "start": "2022-05-27",
+            "end": "2023-06-30",
+            "points": [
+              {
+                "label": "peak 1",
+                "date": "2022-05-27",
+                "price": 415.26
+              },
+              {
+                "label": "trough",
+                "date": "2022-06-17",
+                "price": 365.86
+              },
+              {
+                "label": "peak 2",
+                "date": "2022-08-12",
+                "price": 427.1
+              }
+            ],
+            "metrics": {
+              "peak_difference_pct": 2.77,
+              "depth_pct": 14.34,
+              "bars_between": 11,
+              "confirmation_level": 365.86,
+              "event_date": "2023-06-30"
+            },
+            "summary": "Double top: peaks $415.26 (2022-05-27) and $427.10 (2022-08-12), trough $365.86; status confirmed_then_failed on 2023-06-30.",
+            "id": "C07"
+          },
+          {
+            "type": "double_top",
+            "family": "reversal",
+            "implied_bias": "bearish",
+            "status": "failed",
+            "start": "2022-12-02",
+            "end": "2023-06-02",
+            "points": [
+              {
+                "label": "peak 1",
+                "date": "2022-12-02",
+                "price": 406.91
+              },
+              {
+                "label": "trough",
+                "date": "2022-12-30",
+                "price": 382.43
+              },
+              {
+                "label": "peak 2",
+                "date": "2023-02-03",
+                "price": 412.35
+              }
+            ],
+            "metrics": {
+              "peak_difference_pct": 1.32,
+              "depth_pct": 7.26,
+              "bars_between": 9,
+              "confirmation_level": 382.43,
+              "event_date": "2023-06-02"
+            },
+            "summary": "Double top: peaks $406.91 (2022-12-02) and $412.35 (2023-02-03), trough $382.43; status failed on 2023-06-02.",
+            "id": "C08"
+          },
+          {
+            "type": "double_bottom",
+            "family": "reversal",
+            "implied_bias": "bullish",
+            "status": "confirmed",
+            "start": "2022-06-17",
+            "end": "2023-06-02",
+            "points": [
+              {
+                "label": "trough 1",
+                "date": "2022-06-17",
+                "price": 365.86
+              },
+              {
+                "label": "peak",
+                "date": "2022-08-12",
+                "price": 427.1
+              },
+              {
+                "label": "trough 2",
+                "date": "2022-09-30",
+                "price": 357.18
+              }
+            ],
+            "metrics": {
+              "peak_difference_pct": 2.43,
+              "depth_pct": 19.58,
+              "bars_between": 15,
+              "confirmation_level": 427.1,
+              "event_date": "2023-06-02"
+            },
+            "summary": "Double bottom: troughs $365.86 (2022-06-17) and $357.18 (2022-09-30), peak $427.10; status confirmed on 2023-06-02.",
+            "id": "C09"
+          },
+          {
+            "type": "double_bottom",
+            "family": "reversal",
+            "implied_bias": "bullish",
+            "status": "confirmed",
+            "start": "2022-12-30",
+            "end": "2023-04-14",
+            "points": [
+              {
+                "label": "trough 1",
+                "date": "2022-12-30",
+                "price": 382.43
+              },
+              {
+                "label": "peak",
+                "date": "2023-02-03",
+                "price": 412.35
+              },
+              {
+                "label": "trough 2",
+                "date": "2023-03-10",
+                "price": 385.91
+              }
+            ],
+            "metrics": {
+              "peak_difference_pct": 0.91,
+              "depth_pct": 7.82,
+              "bars_between": 10,
+              "confirmation_level": 412.35,
+              "event_date": "2023-04-14"
+            },
+            "summary": "Double bottom: troughs $382.43 (2022-12-30) and $385.91 (2023-03-10), peak $412.35; status confirmed on 2023-04-14.",
+            "id": "C10"
+          },
+          {
+            "type": "rising_wedge",
+            "family": "formation",
+            "implied_bias": "bearish",
+            "status": "forming",
+            "start": "2023-07-28",
+            "end": "2026-10-29",
+            "points": [
+              {
+                "label": "pivot H",
+                "date": "2023-07-28",
+                "price": 456.92
+              },
+              {
+                "label": "pivot H",
+                "date": "2025-02-14",
+                "price": 609.7
+              },
+              {
+                "label": "pivot L",
+                "date": "2025-04-04",
+                "price": 505.28
+              },
+              {
+                "label": "pivot H",
+                "date": "2026-01-09",
+                "price": 694.07
+              },
+              {
+                "label": "pivot L",
+                "date": "2026-03-27",
+                "price": 634.09
+              }
+            ],
+            "metrics": {
+              "upper_line": "rising",
+              "lower_line": "rising",
+              "shape": "converging",
+              "width_ratio_end_vs_start": 0.35,
+              "upper_line_now": 773.16,
+              "lower_line_now": 712.39,
+              "pivot_highs": 3,
+              "pivot_lows": 2,
+              "price_position": "inside"
+            },
+            "summary": "Recent pivots form a rising wedge candidate: upper line rising, lower line rising, converging (width ratio 0.35); last close is inside (upper $773.16, lower $712.39).",
+            "id": "C11"
+          },
+          {
+            "type": "golden_cross",
+            "family": "moving_average",
+            "implied_bias": "bullish",
+            "status": "occurred",
+            "start": "2025-06-27",
+            "end": "2025-06-27",
+            "points": [
+              {
+                "label": "golden cross",
+                "date": "2025-06-27",
+                "price": 614.91
+              }
+            ],
+            "metrics": {
+              "fast_len": 10,
+              "slow_len": 40
+            },
+            "summary": "Golden cross: 10-bar SMA crossed above the 40-bar SMA on 2025-06-27.",
+            "id": "C12"
+          }
+        ]
+      },
+      "analysis": {
+        "selections": [
+          {
+            "candidate_id": "C04",
+            "label": "Resistance at window high",
+            "description": "Resistance at the window high of $778.57, set on 2026-10-09. The last close is 1.39% below it. Resistance comes from earlier reaction highs, and a close above it would show buyers in control. It has only one touch so far and is still active.",
+            "role": "resistance",
+            "citations": [
+              "sto-007-04",
+              "sto-007-05",
+              "sto-007-13"
+            ]
+          },
+          {
+            "candidate_id": "C01",
+            "label": "Support at prior swing high",
+            "description": "Support near $694.07, the swing high from 2026-01-09. Price later broke above it, and broken resistance often turns into support. It sits 9.61% below the last close. It is still active, though so far it has only one touch.",
+            "role": "support",
+            "citations": [
+              "sto-007-06",
+              "sto-007-13"
+            ]
+          },
+          {
+            "candidate_id": "C02",
+            "label": "Support at last swing low",
+            "description": "Support at $634.09, the most recent swing low from 2026-03-27. Previous reaction lows set support levels. If price closed below this one, sellers would have taken control. It is active and 17.42% below the last close.",
+            "role": "support",
+            "citations": [
+              "sto-007-04",
+              "sto-007-05"
+            ]
+          },
+          {
+            "candidate_id": "C11",
+            "label": "Rising wedge (forming)",
+            "description": "Highs and lows are both rising but the lines are converging (width ratio 0.35). The upper line is now near $773.16 and the lower line near $712.39. Rising wedges lean bearish, but this is not confirmed until price breaks the lower support line. Price is still inside.",
+            "role": "bearish",
+            "citations": [
+              "sto-034-00",
+              "sto-034-01",
+              "sto-034-02",
+              "the-084-01"
+            ]
+          },
+          {
+            "candidate_id": "C05",
+            "label": "Rising support trendline (intact)",
+            "description": "A multi-year uptrend line from the $357.18 low (2022-09-30) through the $410.68 low (2023-10-27), with 3 touches. It now sits near $560.67, far below price. The uptrend counts as solid while price stays above the line, and it is intact.",
+            "role": "support",
+            "citations": [
+              "sto-027-01"
+            ]
+          },
+          {
+            "candidate_id": "C12",
+            "label": "Golden cross (10/40 SMA)",
+            "description": "The 10-week SMA crossed above the 40-week SMA on 2025-06-27, near $614.91. A golden cross is a bullish signal and works best in a strong trend. The fast average is still above the slow one, so the signal still stands.",
+            "role": "bullish",
+            "citations": [
+              "sto-094-12",
+              "sto-094-14"
+            ]
+          }
+        ],
+        "rejected": [
+          {
+            "candidate_id": "C03",
+            "reason": "The $454.92 level is from 2022-2023 and sits 40.75% below price, so it doesn't matter for current trading."
+          },
+          {
+            "candidate_id": "C06",
+            "reason": "This falling trendline was broken back in 2023-04-14. It is old history and the rising trendline covers the same turn."
+          },
+          {
+            "candidate_id": "C07",
+            "reason": "This 2022 double top was confirmed and then failed in 2023. It is old, says little about current conditions, and would clutter the chart."
+          },
+          {
+            "candidate_id": "C08",
+            "reason": "This 2022-2023 double top failed and never confirmed, so it says nothing about current conditions."
+          },
+          {
+            "candidate_id": "C09",
+            "reason": "This double bottom was confirmed in 2023 and its bullish move has long since played out. It is old context."
+          },
+          {
+            "candidate_id": "C10",
+            "reason": "This small 2023 double bottom was confirmed and is long finished. It overlaps C09 and adds little now."
+          }
+        ],
+        "verdict": {
+          "bias": "bullish",
+          "confidence": "medium",
+          "rationale": "Every moving-average check points to an uptrend: price is above both SMAs, the golden cross from 2025 still stands, and the long rising trendline is intact. Price is only 1.38% below its high. Confidence is medium for two reasons: the forming rising wedge leans bearish, and price is pressing against $778.57 resistance. A close below the wedge's lower line would hurt the bullish case.",
+          "citations": [
+            "sto-027-01",
+            "sto-094-12",
+            "sto-034-00",
+            "sto-034-02",
+            "sto-007-05"
+          ]
+        }
+      },
+      "review": {
+        "reviews": [
+          {
+            "candidate_id": "C04",
+            "decision": "approve",
+            "issues": "Matches the candidate data: $778.57 high on 2026-10-09, last close 1.39% below it, one touch, active. The 2026-10-09 pivot is still marked 'H?', so it is unconfirmed. That is a small caveat and does not make the description wrong.",
+            "label": "Resistance at window high",
+            "description": "Resistance at the window high of $778.57, set on 2026-10-09. The last close is 1.39% below it. A close above it would show buyers in control. It has only one touch, comes from a provisional pivot, and is still active.",
+            "role": "resistance",
+            "citations": [
+              "sto-007-04",
+              "sto-007-05",
+              "sto-007-13"
+            ]
+          },
+          {
+            "candidate_id": "C01",
+            "decision": "approve",
+            "issues": "Level, date and distance match. Price window data confirms price later moved above $694.07, up to $778.57. The detector reports role_reversal=false, so this level has not yet been retested as support. The original wording describes role reversal only as a general tendency, which is acceptable. I added 'untested' to make this clear.",
+            "label": "Support at prior swing high",
+            "description": "Support near $694.07, the swing high from 2026-01-09. Price later broke above it, and broken resistance often turns into support. It has not been retested yet. It sits 9.61% below the last close, has one touch and is active.",
+            "role": "support",
+            "citations": [
+              "sto-007-06",
+              "sto-007-13"
+            ]
+          },
+          {
+            "candidate_id": "C02",
+            "decision": "approve",
+            "issues": "Matches the data: swing low $634.09 on 2026-03-27, 17.42% below the close, active. It is also the low of the price window since that date.",
+            "label": "Support at last swing low",
+            "description": "Support at $634.09, the most recent swing low from 2026-03-27. Previous reaction lows set support levels. If price closed below this one, sellers would have taken control. It is active and 17.42% below the last close.",
+            "role": "support",
+            "citations": [
+              "sto-007-04",
+              "sto-007-05"
+            ]
+          },
+          {
+            "candidate_id": "C11",
+            "decision": "approve",
+            "issues": "The pattern has 3 pivot highs and 2 pivot lows, which meets the 3+2 touch minimum. The lines converge (width ratio 0.35), and the lower line is steeper. Line values of $773.16 and $712.39 match, and price is inside. The description correctly says the pattern is unconfirmed.",
+            "label": "Rising wedge (forming)",
+            "description": "Highs and lows are both rising but the lines are converging (width ratio 0.35). The upper line is now near $773.16 and the lower line near $712.39. Rising wedges lean bearish, but this is not confirmed until price breaks the lower support line. Price is still inside.",
+            "role": "bearish",
+            "citations": [
+              "sto-034-00",
+              "sto-034-01",
+              "sto-034-02",
+              "the-084-01"
+            ]
+          },
+          {
+            "candidate_id": "C05",
+            "decision": "approve",
+            "issues": "Anchors, 3 touches, line value of $560.67 and intact status all match. The implied third touch is near the 2025-04-04 low of $505.28, which fits the slope.",
+            "label": "Rising support trendline (intact)",
+            "description": "A multi-year uptrend line from the $357.18 low (2022-09-30) through the $410.68 low (2023-10-27), with 3 touches. It now sits near $560.67, far below price. The uptrend counts as solid while price stays above the line, and it is intact.",
+            "role": "support",
+            "citations": [
+              "sto-027-01"
+            ]
+          },
+          {
+            "candidate_id": "C12",
+            "decision": "approve",
+            "issues": "Date and price match. The fast SMA ($767.62) is still above the slow SMA ($729.79), so the claim that the signal still stands is supported.",
+            "label": "Golden cross (10/40 SMA)",
+            "description": "The 10-week SMA crossed above the 40-week SMA on 2025-06-27, near $614.91. A golden cross is a bullish signal and works best in a strong trend. The fast average is still above the slow one, so the signal still stands.",
+            "role": "bullish",
+            "citations": [
+              "sto-094-12",
+              "sto-094-14"
+            ]
+          }
+        ],
+        "verdict": {
+          "bias": "bullish",
+          "confidence": "medium",
+          "rationale": "The trend score is 4/4: price is above both SMAs, the fast SMA is above the slow one, and the slow SMA is rising. The 2025 golden cross still stands, the multi-year uptrend line is intact, and price is 1.38% below its high. Two things hold confidence to medium: the forming rising wedge leans bearish, and $778.57 resistance is overhead. A close below the wedge's lower line, near $712.39, would weaken the case.",
+          "citations": [
+            "sto-027-01",
+            "sto-094-12",
+            "sto-034-00",
+            "sto-034-02",
+            "sto-007-05"
+          ]
+        },
+        "verdict_agrees_with_analyst": true,
+        "notes": "I checked every selection against the candidate data, and all six hold up. The only edits are wording: C01 now says the level is untested (role_reversal=false), and C04 says its pivot is provisional. The six rejections are reasonable, since those patterns are from 2022-2023, have already resolved and are far from current price. The wedge's lower line (about $712.39) sits above the $694.07 support, so a wedge break would come before any test of that level."
+      },
+      "annotations": [
+        {
+          "candidate_id": "C04",
+          "type": "resistance",
+          "label": "Resistance at window high",
+          "description": "Resistance at the window high of $778.57, set on 2026-10-09. The last close is 1.39% below it. A close above it would show buyers in control. It has only one touch, comes from a provisional pivot, and is still active.",
+          "role": "resistance",
+          "decision": "approve",
+          "citations": [
+            {
+              "id": "sto-007-04",
+              "site": "stockcharts",
+              "title": "Support & Resistance",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+            },
+            {
+              "id": "sto-007-05",
+              "site": "stockcharts",
+              "title": "Support & Resistance",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+            },
+            {
+              "id": "sto-007-13",
+              "site": "stockcharts",
+              "title": "Support & Resistance",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+            }
+          ]
+        },
+        {
+          "candidate_id": "C01",
+          "type": "support",
+          "label": "Support at prior swing high",
+          "description": "Support near $694.07, the swing high from 2026-01-09. Price later broke above it, and broken resistance often turns into support. It has not been retested yet. It sits 9.61% below the last close, has one touch and is active.",
+          "role": "support",
+          "decision": "approve",
+          "citations": [
+            {
+              "id": "sto-007-06",
+              "site": "stockcharts",
+              "title": "Support & Resistance",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+            },
+            {
+              "id": "sto-007-13",
+              "site": "stockcharts",
+              "title": "Support & Resistance",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+            }
+          ]
+        },
+        {
+          "candidate_id": "C02",
+          "type": "support",
+          "label": "Support at last swing low",
+          "description": "Support at $634.09, the most recent swing low from 2026-03-27. Previous reaction lows set support levels. If price closed below this one, sellers would have taken control. It is active and 17.42% below the last close.",
+          "role": "support",
+          "decision": "approve",
+          "citations": [
+            {
+              "id": "sto-007-04",
+              "site": "stockcharts",
+              "title": "Support & Resistance",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+            },
+            {
+              "id": "sto-007-05",
+              "site": "stockcharts",
+              "title": "Support & Resistance",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+            }
+          ]
+        },
+        {
+          "candidate_id": "C11",
+          "type": "rising_wedge",
+          "label": "Rising wedge (forming)",
+          "description": "Highs and lows are both rising but the lines are converging (width ratio 0.35). The upper line is now near $773.16 and the lower line near $712.39. Rising wedges lean bearish, but this is not confirmed until price breaks the lower support line. Price is still inside.",
+          "role": "bearish",
+          "decision": "approve",
+          "citations": [
+            {
+              "id": "sto-034-00",
+              "site": "stockcharts",
+              "title": "Rising Wedge",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/rising-wedge"
+            },
+            {
+              "id": "sto-034-01",
+              "site": "stockcharts",
+              "title": "Rising Wedge",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/rising-wedge"
+            },
+            {
+              "id": "sto-034-02",
+              "site": "stockcharts",
+              "title": "Rising Wedge",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/rising-wedge"
+            },
+            {
+              "id": "the-084-01",
+              "site": "thepatternsite",
+              "title": "Rising Wedge",
+              "url": "https://thepatternsite.com/risewedge.html"
+            }
+          ]
+        },
+        {
+          "candidate_id": "C05",
+          "type": "rising_support_trendline",
+          "label": "Rising support trendline (intact)",
+          "description": "A multi-year uptrend line from the $357.18 low (2022-09-30) through the $410.68 low (2023-10-27), with 3 touches. It now sits near $560.67, far below price. The uptrend counts as solid while price stays above the line, and it is intact.",
+          "role": "support",
+          "decision": "approve",
+          "citations": [
+            {
+              "id": "sto-027-01",
+              "site": "stockcharts",
+              "title": "Trend Lines",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/trend-lines"
+            }
+          ]
+        },
+        {
+          "candidate_id": "C12",
+          "type": "golden_cross",
+          "label": "Golden cross (10/40 SMA)",
+          "description": "The 10-week SMA crossed above the 40-week SMA on 2025-06-27, near $614.91. A golden cross is a bullish signal and works best in a strong trend. The fast average is still above the slow one, so the signal still stands.",
+          "role": "bullish",
+          "decision": "approve",
+          "citations": [
+            {
+              "id": "sto-094-12",
+              "site": "stockcharts",
+              "title": "Moving Averages - Simple and Exponential",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/technical-indicators-and-overlays/technical-overlays/moving-averages-simple-and-exponential"
+            },
+            {
+              "id": "sto-094-14",
+              "site": "stockcharts",
+              "title": "Moving Averages - Simple and Exponential",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/technical-indicators-and-overlays/technical-overlays/moving-averages-simple-and-exponential"
+            }
+          ]
+        }
+      ],
+      "chart": "C:\\Users\\emitb\\anthropic-projects\\Agentic-RAG-Prototype\\outputs\\spy_annotated_10y.png"
+    },
+    "3y": {
+      "title": "SPY, last 3 years, daily bars",
+      "detection": {
+        "bar_size": "daily",
+        "params": {
+          "zigzag_pct": 0.035,
+          "level_tol": 0.012,
+          "equal_tol": 0.025,
+          "head_min": 0.02,
+          "min_sep_bars": 10,
+          "flat_change": 0.025,
+          "sma": [
+            50,
+            200
+          ]
+        },
+        "first_date": "2023-10-30",
+        "last_date": "2026-10-29",
+        "bars": 753,
+        "last_close": 767.86,
+        "window_high": 779.09,
+        "window_low": 415.59,
+        "pivots": [
+          {
+            "label": "L",
+            "date": "2023-10-30",
+            "price": 415.59
+          },
+          {
+            "label": "H",
+            "date": "2024-03-27",
+            "price": 523.17
+          },
+          {
+            "label": "L",
+            "date": "2024-04-19",
+            "price": 495.16
+          },
+          {
+            "label": "H",
+            "date": "2024-07-16",
+            "price": 564.86
+          },
+          {
+            "label": "L",
+            "date": "2024-08-05",
+            "price": 517.38
+          },
+          {
+            "label": "H",
+            "date": "2024-08-30",
+            "price": 563.68
+          },
+          {
+            "label": "L",
+            "date": "2024-09-06",
+            "price": 540.36
+          },
+          {
+            "label": "H",
+            "date": "2024-12-06",
+            "price": 607.81
+          },
+          {
+            "label": "L",
+            "date": "2025-01-10",
+            "price": 580.49
+          },
+          {
+            "label": "H",
+            "date": "2025-02-19",
+            "price": 612.93
+          },
+          {
+            "label": "L",
+            "date": "2025-03-13",
+            "price": 551.42
+          },
+          {
+            "label": "H",
+            "date": "2025-03-25",
+            "price": 575.46
+          },
+          {
+            "label": "L",
+            "date": "2025-04-08",
+            "price": 496.48
+          },
+          {
+            "label": "H",
+            "date": "2025-04-09",
+            "price": 548.62
+          },
+          {
+            "label": "L",
+            "date": "2025-04-21",
+            "price": 513.88
+          },
+          {
+            "label": "H",
+            "date": "2025-10-29",
+            "price": 687.39
+          },
+          {
+            "label": "L",
+            "date": "2025-11-20",
+            "price": 652.53
+          },
+          {
+            "label": "H",
+            "date": "2026-01-27",
+            "price": 695.49
+          },
+          {
+            "label": "L",
+            "date": "2026-03-30",
+            "price": 631.97
+          },
+          {
+            "label": "H",
+            "date": "2026-06-02",
+            "price": 759.57
+          },
+          {
+            "label": "L",
+            "date": "2026-06-10",
+            "price": 725.43
+          },
+          {
+            "label": "H?",
+            "date": "2026-10-06",
+            "price": 779.09
+          }
+        ],
+        "trend": {
+          "regime": "uptrend",
+          "score": 4,
+          "checks": {
+            "close_above_fast_sma": true,
+            "close_above_slow_sma": true,
+            "fast_above_slow": true,
+            "slow_sma_rising": true
+          },
+          "fast_len": 50,
+          "slow_len": 200,
+          "fast_sma": 767.6,
+          "slow_sma": 728.52,
+          "last_close": 767.86,
+          "drawdown_from_window_high_pct": -1.44,
+          "last_cross": {
+            "type": "golden_cross",
+            "date": "2025-07-01",
+            "price": 617.65
+          }
+        },
+        "candidates": [
+          {
+            "type": "support",
+            "family": "level",
+            "implied_bias": "neutral",
+            "status": "active",
+            "start": "2026-06-02",
+            "end": "2026-06-02",
+            "points": [
+              {
+                "label": "touch 1 (high)",
+                "date": "2026-06-02",
+                "price": 759.57
+              }
+            ],
+            "metrics": {
+              "level": 759.57,
+              "touches": 1,
+              "touch_kinds": "H",
+              "distance_from_close_pct": -1.08,
+              "key_pivot": "most recent swing high",
+              "last_touch": "2026-06-02",
+              "role_reversal": false
+            },
+            "summary": "Support near $759.57: 1 pivot touch(es) from 2026-06-02 to 2026-06-02; most recent swing high.",
+            "id": "C01"
+          },
+          {
+            "type": "support",
+            "family": "level",
+            "implied_bias": "neutral",
+            "status": "active",
+            "start": "2026-06-10",
+            "end": "2026-06-10",
+            "points": [
+              {
+                "label": "touch 1 (low)",
+                "date": "2026-06-10",
+                "price": 725.43
+              }
+            ],
+            "metrics": {
+              "level": 725.43,
+              "touches": 1,
+              "touch_kinds": "L",
+              "distance_from_close_pct": -5.53,
+              "key_pivot": "most recent swing low",
+              "last_touch": "2026-06-10",
+              "role_reversal": false
+            },
+            "summary": "Support near $725.43: 1 pivot touch(es) from 2026-06-10 to 2026-06-10; most recent swing low.",
+            "id": "C02"
+          },
+          {
+            "type": "support",
+            "family": "level",
+            "implied_bias": "neutral",
+            "status": "active",
+            "start": "2025-10-29",
+            "end": "2026-01-27",
+            "points": [
+              {
+                "label": "touch 1 (high)",
+                "date": "2025-10-29",
+                "price": 687.39
+              },
+              {
+                "label": "touch 2 (high)",
+                "date": "2026-01-27",
+                "price": 695.49
+              }
+            ],
+            "metrics": {
+              "level": 691.44,
+              "touches": 2,
+              "touch_kinds": "HH",
+              "distance_from_close_pct": -9.95,
+              "key_pivot": "",
+              "last_touch": "2026-01-27",
+              "role_reversal": false
+            },
+            "summary": "Support near $691.44: 2 pivot touch(es) from 2025-10-29 to 2026-01-27.",
+            "id": "C03"
+          },
+          {
+            "type": "resistance",
+            "family": "level",
+            "implied_bias": "neutral",
+            "status": "active",
+            "start": "2026-10-06",
+            "end": "2026-10-06",
+            "points": [
+              {
+                "label": "touch 1 (high)",
+                "date": "2026-10-06",
+                "price": 779.09
+              }
+            ],
+            "metrics": {
+              "level": 779.09,
+              "touches": 1,
+              "touch_kinds": "H",
+              "distance_from_close_pct": 1.46,
+              "key_pivot": "range extreme",
+              "last_touch": "2026-10-06",
+              "role_reversal": false
+            },
+            "summary": "Resistance near $779.09: 1 pivot touch(es) from 2026-10-06 to 2026-10-06; range extreme.",
+            "id": "C04"
+          },
+          {
+            "type": "rising_support_trendline",
+            "family": "trendline",
+            "implied_bias": "bullish",
+            "status": "intact",
+            "start": "2025-04-08",
+            "end": "2026-10-29",
+            "points": [
+              {
+                "label": "anchor 1",
+                "date": "2025-04-08",
+                "price": 496.48
+              },
+              {
+                "label": "anchor 2",
+                "date": "2026-03-30",
+                "price": 631.97
+              }
+            ],
+            "metrics": {
+              "touches": 2,
+              "slope_pct_per_bar": 0.1118,
+              "span_bars": 392,
+              "broken_on": "",
+              "line_value_at_last_bar": 714.15
+            },
+            "summary": "Rising support trendline from 2025-04-08 ($496.48) through 2026-03-30 ($631.97), 2 touches, still intact.",
+            "id": "C05"
+          },
+          {
+            "type": "falling_resistance_trendline",
+            "family": "trendline",
+            "implied_bias": "bullish",
+            "status": "broken",
+            "start": "2025-02-19",
+            "end": "2025-04-25",
+            "points": [
+              {
+                "label": "anchor 1",
+                "date": "2025-02-19",
+                "price": 612.93
+              },
+              {
+                "label": "anchor 2",
+                "date": "2025-03-25",
+                "price": 575.46
+              }
+            ],
+            "metrics": {
+              "touches": 2,
+              "slope_pct_per_bar": -0.2547,
+              "span_bars": 46,
+              "broken_on": "2025-04-25",
+              "line_value_at_last_bar": -52.16
+            },
+            "summary": "Falling resistance trendline from 2025-02-19 ($612.93) through 2025-03-25 ($575.46), 2 touches, broken on 2025-04-25.",
+            "id": "C06"
+          },
+          {
+            "type": "double_top",
+            "family": "reversal",
+            "implied_bias": "bearish",
+            "status": "confirmed_then_failed",
+            "start": "2024-12-06",
+            "end": "2025-07-21",
+            "points": [
+              {
+                "label": "peak 1",
+                "date": "2024-12-06",
+                "price": 607.81
+              },
+              {
+                "label": "trough",
+                "date": "2025-01-10",
+                "price": 580.49
+              },
+              {
+                "label": "peak 2",
+                "date": "2025-02-19",
+                "price": 612.93
+              }
+            ],
+            "metrics": {
+              "peak_difference_pct": 0.84,
+              "depth_pct": 5.29,
+              "bars_between": 48,
+              "confirmation_level": 580.49,
+              "event_date": "2025-07-21"
+            },
+            "summary": "Double top: peaks $607.81 (2024-12-06) and $612.93 (2025-02-19), trough $580.49; status confirmed_then_failed on 2025-07-21.",
+            "id": "C07"
+          },
+          {
+            "type": "double_top",
+            "family": "reversal",
+            "implied_bias": "bearish",
+            "status": "confirmed_then_failed",
+            "start": "2025-10-29",
+            "end": "2026-04-24",
+            "points": [
+              {
+                "label": "peak 1",
+                "date": "2025-10-29",
+                "price": 687.39
+              },
+              {
+                "label": "trough",
+                "date": "2025-11-20",
+                "price": 652.53
+              },
+              {
+                "label": "peak 2",
+                "date": "2026-01-27",
+                "price": 695.49
+              }
+            ],
+            "metrics": {
+              "peak_difference_pct": 1.16,
+              "depth_pct": 6.18,
+              "bars_between": 60,
+              "confirmation_level": 652.53,
+              "event_date": "2026-04-24"
+            },
+            "summary": "Double top: peaks $687.39 (2025-10-29) and $695.49 (2026-01-27), trough $652.53; status confirmed_then_failed on 2026-04-24.",
+            "id": "C08"
+          },
+          {
+            "type": "golden_cross",
+            "family": "moving_average",
+            "implied_bias": "bullish",
+            "status": "occurred",
+            "start": "2025-07-01",
+            "end": "2025-07-01",
+            "points": [
+              {
+                "label": "golden cross",
+                "date": "2025-07-01",
+                "price": 617.65
+              }
+            ],
+            "metrics": {
+              "fast_len": 50,
+              "slow_len": 200
+            },
+            "summary": "Golden cross: 50-bar SMA crossed above the 200-bar SMA on 2025-07-01.",
+            "id": "C09"
+          }
+        ]
+      },
+      "analysis": {
+        "selections": [
+          {
+            "candidate_id": "C01",
+            "label": "Nearest support: old swing high",
+            "description": "The 2026-06-02 swing high at $759.57 is the closest support, about 1.08% below the close. Price has risen above it, and broken resistance can act as support. It has only one touch so far and has not been retested.",
+            "role": "support",
+            "citations": [
+              "sto-007-04",
+              "sto-007-13"
+            ]
+          },
+          {
+            "candidate_id": "C04",
+            "label": "Resistance at window high",
+            "description": "The window high at $779.09, set 2026-10-06, is the nearest resistance, about 1.46% above the close. A close above it would mean buyers have the upper hand. It has one touch and is untested since.",
+            "role": "resistance",
+            "citations": [
+              "sto-007-04",
+              "sto-007-05"
+            ]
+          },
+          {
+            "candidate_id": "C02",
+            "label": "Most recent swing low support",
+            "description": "The most recent reaction low at $725.43 (2026-06-10) is the next support, about 5.53% below the close. Support comes from previous reaction lows, and a break below this level would mean sellers have taken control. The level is active.",
+            "role": "support",
+            "citations": [
+              "sto-007-04",
+              "sto-007-05"
+            ]
+          },
+          {
+            "candidate_id": "C05",
+            "label": "Rising support trendline (intact)",
+            "description": "This uptrend line runs from $496.48 (2025-04-08) through $631.97 (2026-03-30) and is near $714.15 now. The uptrend holds while price stays above the line. It has only two touches, and the definition wants three, so treat it as tentative.",
+            "role": "bullish",
+            "citations": [
+              "sto-027-01"
+            ]
+          },
+          {
+            "candidate_id": "C08",
+            "label": "Double top (busted)",
+            "description": "The peaks at $687.39 and $695.49 confirmed below the $652.53 trough but were invalidated on 2026-04-24. The bearish reversal failed, and price went on to new highs. The pattern is also shallow at 6.18%, below the 10-20% guideline.",
+            "role": "bullish",
+            "citations": [
+              "sto-031-02",
+              "the-052-05",
+              "sto-031-03"
+            ]
+          },
+          {
+            "candidate_id": "C09",
+            "label": "Golden cross (50/200 SMA)",
+            "description": "The 50-day SMA crossed above the 200-day SMA on 2025-07-01. That is a medium- to long-term bullish signal, and it works best in strong trends. The cross still holds: the 50-day sits above a rising 200-day.",
+            "role": "bullish",
+            "citations": [
+              "sto-094-12",
+              "sto-094-14"
+            ]
+          }
+        ],
+        "rejected": [
+          {
+            "candidate_id": "C03",
+            "reason": "The $691.44 zone is nearly 10% below the close. It is far from current action, and nearer supports already cover it."
+          },
+          {
+            "candidate_id": "C06",
+            "reason": "This falling resistance line from early 2025 was broken on 2025-04-25. It is old and has nothing to do with the current price."
+          },
+          {
+            "candidate_id": "C07",
+            "reason": "This is an older busted double top from 2024-25. It says the same thing as the more recent C08, and its 5.29% depth is well short of the 10-20% guideline."
+          }
+        ],
+        "verdict": {
+          "bias": "bullish",
+          "confidence": "medium",
+          "rationale": "Price is above both moving averages, and the golden cross is still in force. The rising trendline is intact, and the recent double top failed. The close sits just 1.46% under the $779.09 resistance, with support at $759.57. Confidence is medium because the levels have one touch each and the trendline has only two.",
+          "citations": [
+            "sto-094-12",
+            "sto-027-01",
+            "sto-031-02",
+            "sto-007-05"
+          ]
+        }
+      },
+      "review": {
+        "reviews": [
+          {
+            "candidate_id": "C01",
+            "decision": "revise",
+            "issues": "The description says the level 'has not been retested'. That is wrong: the close on 2026-10-23 was $759.97, about 0.05% above $759.57, and price held there. That is effectively a retest. Swapped sto-007-13 for sto-007-06, which covers the resistance-turned-support principle.",
+            "label": "Nearest support: old swing high (role reversal)",
+            "description": "The 2026-06-02 swing high at $759.57 is the nearest support, about 1.08% below the close. Price fell to $725.43, then rose back above it. The 2026-10-23 pullback to a $759.97 close held just above the level, a first retest of resistance turned support.",
+            "role": "support",
+            "citations": [
+              "sto-007-04",
+              "sto-007-06"
+            ]
+          },
+          {
+            "candidate_id": "C04",
+            "decision": "revise",
+            "issues": "The data checks out: $779.09 on 2026-10-06, 1.46% above the close. But the 2026-08-13 close of $777.88 came within about 0.15% of this level, so it is more of a $778-779 zone tested twice than a single untested touch.",
+            "label": "Resistance at window high",
+            "description": "Resistance sits near $779.09, the window high set 2026-10-06 and about 1.46% above the close. The 2026-08-13 close at $777.88 also stalled just below it, so treat $778-779 as a zone. A close above it would signal that buyers have the upper hand.",
+            "role": "resistance",
+            "citations": [
+              "sto-007-04",
+              "sto-007-05"
+            ]
+          },
+          {
+            "candidate_id": "C02",
+            "decision": "approve",
+            "issues": "Checked: $725.43 on 2026-06-10 is the lowest close since June, 5.53% below the close.",
+            "label": "Most recent swing low support",
+            "description": "The most recent reaction low at $725.43 (2026-06-10) is the next support, about 5.53% below the close. Support comes from previous reaction lows, and a break below this level would mean sellers have taken control. The level is active.",
+            "role": "support",
+            "citations": [
+              "sto-007-04",
+              "sto-007-05"
+            ]
+          },
+          {
+            "candidate_id": "C05",
+            "decision": "approve",
+            "issues": "The anchors, the $714.15 current line value and the intact status match the data. The analyst correctly flags that two touches fall short of the three-touch rule.",
+            "label": "Rising support trendline (tentative)",
+            "description": "This uptrend line runs from $496.48 (2025-04-08) through $631.97 (2026-03-30) and is near $714.15 now. The uptrend holds while price stays above the line. It has only two touches, and the definition wants three, so treat it as tentative.",
+            "role": "bullish",
+            "citations": [
+              "sto-027-01"
+            ]
+          },
+          {
+            "candidate_id": "C08",
+            "decision": "approve",
+            "issues": "The peaks, trough, 6.18% depth and the confirmed_then_failed status on 2026-04-24 match the data. Later highs at $759.57 and $779.09 confirm price went on to new highs. Calling a failed bearish pattern bullish is reasonable.",
+            "label": "Double top (busted)",
+            "description": "The peaks at $687.39 and $695.49 confirmed below the $652.53 trough but were invalidated on 2026-04-24. The bearish reversal failed, and price went on to new highs. The pattern is also shallow at 6.18%, below the 10-20% guideline.",
+            "role": "bullish",
+            "citations": [
+              "sto-031-02",
+              "the-052-05",
+              "sto-031-03"
+            ]
+          },
+          {
+            "candidate_id": "C09",
+            "decision": "approve",
+            "issues": "The 2025-07-01 cross matches the data. The trend report confirms the 50-day ($767.6) is above a rising 200-day ($728.52).",
+            "label": "Golden cross (50/200 SMA)",
+            "description": "The 50-day SMA crossed above the 200-day SMA on 2025-07-01. That is a medium- to long-term bullish signal, and it works best in strong trends. The cross still holds: the 50-day sits above a rising 200-day.",
+            "role": "bullish",
+            "citations": [
+              "sto-094-12",
+              "sto-094-14"
+            ]
+          }
+        ],
+        "verdict": {
+          "bias": "bullish",
+          "confidence": "medium",
+          "rationale": "The uptrend regime scores 4 of 4: price is above both SMAs and the 50-day is above a rising 200-day after the 2025-07-01 golden cross. The rising trendline is intact, and the recent double top failed. Price has pulled back 1.44% from the $779.09 high but held $759.57 support on a retest. Confidence is medium because the levels have few touches and the trendline has only two.",
+          "citations": [
+            "sto-094-12",
+            "sto-027-01",
+            "sto-031-02",
+            "sto-007-06"
+          ]
+        },
+        "verdict_agrees_with_analyst": true,
+        "notes": "I revised two items. C01 was described as untested, but the 2026-10-23 close of $759.97 was a retest that held. C04 had a near-test on 2026-08-13 at $777.88, so it is better read as a $778-779 resistance zone. The rejections of C03, C06 and C07 are reasonable. The fast SMA ($767.6) is almost exactly at the close ($767.86), so a small further drop would put price below the 50-day. That is worth watching."
+      },
+      "annotations": [
+        {
+          "candidate_id": "C01",
+          "type": "support",
+          "label": "Nearest support: old swing high (role reversal)",
+          "description": "The 2026-06-02 swing high at $759.57 is the nearest support, about 1.08% below the close. Price fell to $725.43, then rose back above it. The 2026-10-23 pullback to a $759.97 close held just above the level, a first retest of resistance turned support.",
+          "role": "support",
+          "decision": "revise",
+          "citations": [
+            {
+              "id": "sto-007-04",
+              "site": "stockcharts",
+              "title": "Support & Resistance",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+            },
+            {
+              "id": "sto-007-06",
+              "site": "stockcharts",
+              "title": "Support & Resistance",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+            }
+          ]
+        },
+        {
+          "candidate_id": "C04",
+          "type": "resistance",
+          "label": "Resistance at window high",
+          "description": "Resistance sits near $779.09, the window high set 2026-10-06 and about 1.46% above the close. The 2026-08-13 close at $777.88 also stalled just below it, so treat $778-779 as a zone. A close above it would signal that buyers have the upper hand.",
+          "role": "resistance",
+          "decision": "revise",
+          "citations": [
+            {
+              "id": "sto-007-04",
+              "site": "stockcharts",
+              "title": "Support & Resistance",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+            },
+            {
+              "id": "sto-007-05",
+              "site": "stockcharts",
+              "title": "Support & Resistance",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+            }
+          ]
+        },
+        {
+          "candidate_id": "C02",
+          "type": "support",
+          "label": "Most recent swing low support",
+          "description": "The most recent reaction low at $725.43 (2026-06-10) is the next support, about 5.53% below the close. Support comes from previous reaction lows, and a break below this level would mean sellers have taken control. The level is active.",
+          "role": "support",
+          "decision": "approve",
+          "citations": [
+            {
+              "id": "sto-007-04",
+              "site": "stockcharts",
+              "title": "Support & Resistance",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+            },
+            {
+              "id": "sto-007-05",
+              "site": "stockcharts",
+              "title": "Support & Resistance",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/support-and-resistance"
+            }
+          ]
+        },
+        {
+          "candidate_id": "C05",
+          "type": "rising_support_trendline",
+          "label": "Rising support trendline (tentative)",
+          "description": "This uptrend line runs from $496.48 (2025-04-08) through $631.97 (2026-03-30) and is near $714.15 now. The uptrend holds while price stays above the line. It has only two touches, and the definition wants three, so treat it as tentative.",
+          "role": "bullish",
+          "decision": "approve",
+          "citations": [
+            {
+              "id": "sto-027-01",
+              "site": "stockcharts",
+              "title": "Trend Lines",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/trend-lines"
+            }
+          ]
+        },
+        {
+          "candidate_id": "C08",
+          "type": "double_top",
+          "label": "Double top (busted)",
+          "description": "The peaks at $687.39 and $695.49 confirmed below the $652.53 trough but were invalidated on 2026-04-24. The bearish reversal failed, and price went on to new highs. The pattern is also shallow at 6.18%, below the 10-20% guideline.",
+          "role": "bullish",
+          "decision": "approve",
+          "citations": [
+            {
+              "id": "sto-031-02",
+              "site": "stockcharts",
+              "title": "Double Top Reversal",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/double-top-reversal"
+            },
+            {
+              "id": "the-052-05",
+              "site": "thepatternsite",
+              "title": "Adam and Eve Double Tops",
+              "url": "https://thepatternsite.com/aedt.html"
+            },
+            {
+              "id": "sto-031-03",
+              "site": "stockcharts",
+              "title": "Double Top Reversal",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/chart-patterns/double-top-reversal"
+            }
+          ]
+        },
+        {
+          "candidate_id": "C09",
+          "type": "golden_cross",
+          "label": "Golden cross (50/200 SMA)",
+          "description": "The 50-day SMA crossed above the 200-day SMA on 2025-07-01. That is a medium- to long-term bullish signal, and it works best in strong trends. The cross still holds: the 50-day sits above a rising 200-day.",
+          "role": "bullish",
+          "decision": "approve",
+          "citations": [
+            {
+              "id": "sto-094-12",
+              "site": "stockcharts",
+              "title": "Moving Averages - Simple and Exponential",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/technical-indicators-and-overlays/technical-overlays/moving-averages-simple-and-exponential"
+            },
+            {
+              "id": "sto-094-14",
+              "site": "stockcharts",
+              "title": "Moving Averages - Simple and Exponential",
+              "url": "https://chartschool.stockcharts.com/table-of-contents/technical-indicators-and-overlays/technical-overlays/moving-averages-simple-and-exponential"
+            }
+          ]
+        }
+      ],
+      "chart": "C:\\Users\\emitb\\anthropic-projects\\Agentic-RAG-Prototype\\outputs\\spy_annotated_3y.png"
+    }
+  },
+  "cost": {
+    "run_id": "20261029-112840",
+    "total_cost_usd": 0.6495,
+    "budget_usd": 6.0,
+    "api_calls": 13,
+    "tool_calls": 29,
+    "input_tokens": 36,
+    "output_tokens": 13960,
+    "cache_write_tokens": 70108,
+    "cache_read_tokens": 98293,
+    "by_agent_usd": {
+      "researcher": 0.2101,
+      "analyst": 0.1601,
+      "verifier": 0.2793
+    },
+    "by_tool": {
+      "search_corpus": {
+        "calls": 12,
+        "call_cost_usd": 0.1381,
+        "est_result_cost_usd": 0.0584
+      },
+      "final_answer": {
+        "calls": 0,
+        "call_cost_usd": 0.3271,
+        "est_result_cost_usd": 0.0
+      },
+      "get_candidate": {
+        "calls": 9,
+        "call_cost_usd": 0.0951,
+        "est_result_cost_usd": 0.0055
+      },
+      "get_price_window": {
+        "calls": 4,
+        "call_cost_usd": 0.0434,
+        "est_result_cost_usd": 0.0006
+      },
+      "get_chunk": {
+        "calls": 4,
+        "call_cost_usd": 0.0458,
+        "est_result_cost_usd": 0.0056
+      }
+    }
+  }
+}

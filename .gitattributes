@@ -1,0 +1,5 @@
+# Binary outputs must never get line-ending conversion.
+*.pdf binary
+*.png binary
+# The bash wrapper must keep Unix line endings to run.
+*.sh text eol=lf
